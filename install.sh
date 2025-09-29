@@ -57,7 +57,7 @@ echo -e "\e[34mPreparation ...\e[0m" # Blue color
 } & show_loading
 
 # Latest Stable
-CHR_VERSION=6.49.13
+CHR_VERSION=7.19.6
 
 # Environment
 DISK=$(lsblk | grep "disk" | head -n 1 | cut -d' ' -f1)
@@ -86,3 +86,4 @@ echo "/ip address add address=${INTERFACE_IP} interface=[/interface ethernet fin
 } & show_loading
 
 echo -e "\e[32mInstallation complete. Reboot your server now, Please log in and configure your password using Winbox.\e[0m" # Green color
+
