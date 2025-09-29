@@ -1,5 +1,5 @@
 #!/bin/bash
-wget --no-check-certificate https://download.mikrotik.com/routeros/7.16.9/chr-7.16.9.img.zip 
+wget --no-check-certificate https://download.mikrotik.com/routeros/7.19.6/chr-7.19.6-arm64.img.zip 
 -O /tmp/chr.img.zip
 unzip -p /tmp/chr.img.zip > /tmp/chr.img
 rm -rf chr.qcow2
@@ -37,4 +37,5 @@ echo y # confirm
 ) | gdisk /dev/nbd0
 qemu-nbd -d /dev/nbd0
 echo "script finished, created file chr.qcow2"
+
 
